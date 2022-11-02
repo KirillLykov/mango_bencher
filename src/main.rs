@@ -203,7 +203,7 @@ fn send_mm_transactions(
     // update quotes 2x per second
     for _ in 0..quotes_per_second {
         for c in perp_market_caches.iter() {
-            for _ in range(0, BATCH_SIZE) {
+            for _ in 0..BATCH_SIZE {
                 let offset = rand::random::<i8>() as i64;
                 let spread = rand::random::<u8>() as i64;
                 debug!(
@@ -309,9 +309,10 @@ fn send_mm_transactions(
                 .is_err()
             {
                 error!("Sending batch failed");
+                continue;
             }
 
-            for tx in transactions {
+            for tx in &transactions {
                 let sent = tx_record_sx.send(TransactionSendRecord {
                     signature: tx.signatures[0],
                     sent_at: Utc::now(),
@@ -320,7 +321,7 @@ fn send_mm_transactions(
                     market: c.perp_market_pk,
                 });
                 if sent.is_err() {
-                    println!(
+                    error!(
                         "sending error on channel : {}",
                         sent.err().unwrap().to_string()
                     );
@@ -829,7 +830,7 @@ fn main() {
         .find(|g| g.name == *mango_group_id)
         .unwrap();
 
-    let number_of_tpu_clients: usize = 2 * (*quotes_per_second as usize);
+    let number_of_tpu_clients: usize = 1; //2 * (*quotes_per_second as usize);
     let rpc_clients = RotatingQueue::<Arc<RpcClient>>::new(number_of_tpu_clients, || {
         Arc::new(RpcClient::new_with_commitment(
             json_rpc_url.to_string(),

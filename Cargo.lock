@@ -104,7 +104,7 @@ checksum = "6b2d54853319fd101b8dd81de382bcbf3e03410a64d8928bbee85a3e7dcde483"
 [[package]]
 name = "anchor-attribute-access-control"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -117,7 +117,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-account"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -131,7 +131,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-constant"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "proc-macro2 1.0.43",
@@ -141,7 +141,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-error"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "proc-macro2 1.0.43",
@@ -152,7 +152,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-event"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -164,7 +164,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-interface"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -177,7 +177,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-program"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -189,7 +189,7 @@ dependencies = [
 [[package]]
 name = "anchor-attribute-state"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -201,7 +201,7 @@ dependencies = [
 [[package]]
 name = "anchor-derive-accounts"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-syn",
  "anyhow",
@@ -213,7 +213,7 @@ dependencies = [
 [[package]]
 name = "anchor-lang"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anchor-attribute-access-control",
  "anchor-attribute-account",
@@ -236,7 +236,7 @@ dependencies = [
 [[package]]
 name = "anchor-syn"
 version = "0.25.0"
-source = "git+https://github.com/coral-xyz/anchor.git?branch=master#d88a09dbb7f4f7cca4c2801f9703dd959ddef296"
+source = "git+https://github.com/coral-xyz/anchor.git?branch=master#fad05805d8b3931169f1ca66253be310ce66ed2e"
 dependencies = [
  "anyhow",
  "bs58 0.3.1",
@@ -692,6 +692,27 @@ checksum = "8834bb1d8ee5dc048ee3124f2c7c1afcc6bc9aed03f11e9dfd8c69470a5db340"
 dependencies = [
  "feature-probe",
  "serde",
+]
+
+[[package]]
+name = "bytecheck"
+version = "0.6.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d11cac2c12b5adc6570dad2ee1b87eff4955dac476fe12d81e5fdd352e52406f"
+dependencies = [
+ "bytecheck_derive",
+ "ptr_meta",
+]
+
+[[package]]
+name = "bytecheck_derive"
+version = "0.6.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "13e576ebe98e605500b3c8041bb888e966653577172df6dd97398714eb30b9bf"
+dependencies = [
+ "proc-macro2 1.0.43",
+ "quote 1.0.21",
+ "syn 1.0.99",
 ]
 
 [[package]]
@@ -2513,6 +2534,7 @@ dependencies = [
 [[package]]
 name = "mango"
 version = "3.6.0"
+source = "git+https://github.com/KirillLykov/mango-v3.git?branch=mango_testnet#123717083668431f1e1d0b891ac706b65fde8ce5"
 dependencies = [
  "anchor-lang",
  "arrayref",
@@ -2541,6 +2563,7 @@ dependencies = [
 [[package]]
 name = "mango-common"
 version = "3.0.0"
+source = "git+https://github.com/KirillLykov/mango-v3.git?branch=mango_testnet#123717083668431f1e1d0b891ac706b65fde8ce5"
 dependencies = [
  "bytemuck",
  "solana-program",
@@ -2549,6 +2572,7 @@ dependencies = [
 [[package]]
 name = "mango-logs"
 version = "0.1.0"
+source = "git+https://github.com/KirillLykov/mango-v3.git?branch=mango_testnet#123717083668431f1e1d0b891ac706b65fde8ce5"
 dependencies = [
  "anchor-lang",
  "base64 0.13.0",
@@ -2557,6 +2581,7 @@ dependencies = [
 [[package]]
 name = "mango-macro"
 version = "3.0.0"
+source = "git+https://github.com/KirillLykov/mango-v3.git?branch=mango_testnet#123717083668431f1e1d0b891ac706b65fde8ce5"
 dependencies = [
  "bytemuck",
  "mango-common",
@@ -3509,6 +3534,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "ptr_meta"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0738ccf7ea06b608c10564b31debd4f5bc5e197fc8bfe088f68ae5ce81e7a4f1"
+dependencies = [
+ "ptr_meta_derive",
+]
+
+[[package]]
+name = "ptr_meta_derive"
+version = "0.1.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "16b845dbfca988fa33db069c0e230574d15a3088f147a87b64c7589eb662c9ac"
+dependencies = [
+ "proc-macro2 1.0.43",
+ "quote 1.0.21",
+ "syn 1.0.99",
+]
+
+[[package]]
 name = "pyth-client"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3840,6 +3885,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "rend"
+version = "0.3.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "79af64b4b6362ffba04eef3a4e10829718a4896dac19daa741851c86781edf95"
+dependencies = [
+ "bytecheck",
+]
+
+[[package]]
 name = "reqwest"
 version = "0.11.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3899,6 +3953,31 @@ dependencies = [
 ]
 
 [[package]]
+name = "rkyv"
+version = "0.7.39"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cec2b3485b07d96ddfd3134767b8a447b45ea4eb91448d0a35180ec0ffd5ed15"
+dependencies = [
+ "bytecheck",
+ "hashbrown 0.12.3",
+ "ptr_meta",
+ "rend",
+ "rkyv_derive",
+ "seahash",
+]
+
+[[package]]
+name = "rkyv_derive"
+version = "0.7.39"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6eaedadc88b53e36dd32d940ed21ae4d850d5916f2581526921f553a72ac34c4"
+dependencies = [
+ "proc-macro2 1.0.43",
+ "quote 1.0.21",
+ "syn 1.0.99",
+]
+
+[[package]]
 name = "rocksdb"
 version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3922,20 +4001,27 @@ dependencies = [
 
 [[package]]
 name = "rust_decimal"
-version = "1.26.1"
+version = "1.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ee9164faf726e4f3ece4978b25ca877ddc6802fa77f38cdccb32c7f805ecd70c"
+checksum = "33c321ee4e17d2b7abe12b5d20c1231db708dd36185c8a21e9de5fed6da4dbe9"
 dependencies = [
  "arrayvec",
+ "borsh",
+ "bytecheck",
+ "byteorder",
+ "bytes",
  "num-traits",
+ "rand 0.8.5",
+ "rkyv",
  "serde",
+ "serde_json",
 ]
 
 [[package]]
 name = "rust_decimal_macros"
-version = "1.26.1"
+version = "1.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4903d8db81d2321699ca8318035d6ff805c548868df435813968795a802171b2"
+checksum = "5a7e2dba1342e9f1166786a4329ba0d6d6b8d9db7e81d702ec9ba3b39591ddff"
 dependencies = [
  "quote 1.0.21",
  "rust_decimal",
@@ -4117,6 +4203,12 @@ dependencies = [
  "ring",
  "untrusted",
 ]
+
+[[package]]
+name = "seahash"
+version = "4.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c107b6f4780854c8b126e228ea8869f4d7b71260f962fefb57b996b8959ba6b"
 
 [[package]]
 name = "security-framework"
@@ -6802,6 +6894,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "unsize"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4fa7a7a734c1a5664a662ddcea0b6c9472a21da8888c957c7f1eaa09dba7a939"
+dependencies = [
+ "autocfg",
+]
+
+[[package]]
 name = "untrusted"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7138,11 +7239,12 @@ dependencies = [
 
 [[package]]
 name = "without-alloc"
-version = "0.2.1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5e34736feff52a0b3e5680927e947a4d8fac1f0b80dc8120b080dd8de24d75e2"
+checksum = "375db0478b203b950ef10d1cce23cdbe5f30c2454fd9e7673ff56656df23adbb"
 dependencies = [
  "alloc-traits",
+ "unsize",
 ]
 
 [[package]]

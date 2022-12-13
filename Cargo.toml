@@ -23,9 +23,8 @@ serde = "1.0.136"
 serde_derive = "1.0.103"
 serde_json = "1.0.79"
 serde_yaml = "0.8.23"
-mango = { path = "deps/mango-v3/program", default-features = false, features = ["no-entrypoint"] }
-mango-common = { path = "deps/mango-v3/common" }
-#solana-bench-tps = "1.14.9" 
+mango = { git = "https://github.com/KirillLykov/mango-v3.git", branch = "mango_testnet" }
+mango-common = { git = "https://github.com/KirillLykov/mango-v3.git", branch = "mango_testnet" }
 solana-clap-utils = "1.14.9"
 solana-cli-config = "1.14.9"
 solana-client = "1.14.9"
